@@ -11,7 +11,7 @@ public class ProductAdd implements Controller {
 	
 @Override
 public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	// TODO Auto-generated method stub
+	
 	RequestDispatcher dispatcher = request.getRequestDispatcher("add.jsp");
 	dispatcher.forward(request, response);	
 }

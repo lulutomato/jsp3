@@ -14,6 +14,8 @@ public class RequestControllerMapping {
 	public static void init() {
 		mapping.put(new RequestMap("/member/list","GET"),new MemberList());
 		mapping.put(new RequestMap("/member/register","GET"),new MemberRegister());
+		mapping.put(new RequestMap("/member/register","POST"),new MemberRegisterPage());		
+		mapping.put(new RequestMap("/product/add","POST"),new ProductAddPage());		
 		mapping.put(new RequestMap("/product/searchlist","GET"),new ProductList());
 		mapping.put(new RequestMap("/product/add","GET"),new ProductAdd());
 		
